@@ -87,6 +87,9 @@ resource "aws_instance" "Udacity_T2" {
   ami = "ami-0f75c2980c6a5851d"
   instance_type = "t2.micro"
   subnet_id = "subnet-64daa40c"
+  tags = {
+  Name = "Udacity T2"
+  }
   
 }
 
@@ -95,5 +98,7 @@ resource "aws_instance" "Udacity_M4" {
   ami = "ami-0f75c2980c6a5851d"
   instance_type = "m4.large"
   subnet_id = "subnet-64daa40c"
-  
+    tags = {
+  Name = "Udacity M4"
+  }
 }
